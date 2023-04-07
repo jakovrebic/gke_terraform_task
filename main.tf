@@ -70,16 +70,10 @@ output "cluster_location" {
   value = google_container_cluster.default.location
 }
 
- provider "google" {
-  version = "~> 2.13"
-}
-
 provider "google-beta" {
-  version = "~> 2.13"
 }
 
 provider "random" {
-  version = "~> 2.2"
 }
 
 resource "random_id" "name" {
